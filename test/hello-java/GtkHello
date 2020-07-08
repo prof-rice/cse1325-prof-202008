@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+javac -classpath /usr/share/java/gtk-4.1.jar GtkHello.java 
+export CLASSPATH=.:/usr/share/java/gtk-4.1.jar
+java GtkHello

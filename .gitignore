@@ -30,3 +30,68 @@
 *.exe
 *.out
 *.app
+
+# Windows
+Thumbs.db
+
+# OS X
+.DS_Store
+
+# Gedit
+*~
+
+# Visual Studio Code
+.vscode/
+.code-workspace
+
+# Codeblocks
+*.layout
+*.depend
+bin/
+obj/
+
+# Eclipse
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+*.launch
+.cproject
+.autotools
+*.pydevproject
+.factorypath
+
+
+################
+# Java
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+################
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+

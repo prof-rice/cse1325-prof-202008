@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+sudo apt update
+sudo apt install build-essential
+sudo apt install ddd
+sudo apt install libgtkmm-3.0-dev
+sudo apt install libgstreamermm-1.0-dev
+sudo apt install libgtkmm-3.0-doc
+sudo apt install libgstreamermm-1.0-doc
+sudo apt install devhelp
+sudo apt install gtk-3-examples
+sudo apt install git-all
+sudo apt install gedit
+sudo apt install at-spi2-core
