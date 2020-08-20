@@ -1,4 +1,6 @@
-# CSE 1325 Sections 001 and 002
+# CSE 1325-001 and -002
+## Fall 2020
+
 
 This repository includes code that complements each lecture, suggested solutions for each assignment, and additional example code for my Object-Oriented Programming in C++ class.
 
@@ -11,6 +13,8 @@ To create a folder in your virtual machine that is linked to this repository, go
 To download changes within your terminal at any later time, change to your cse1325-prof directory (e.g., `cd ~/cse1325-prof`) and type:
 
 ``git pull``
+
+If that doesn't work, just delete it and clone it again!
 
 ## Working with your local clone
 
