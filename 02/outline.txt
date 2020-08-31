@@ -1,0 +1,50 @@
+Slides 1-9
+
+Fix default editor
+
+01-c_strings.cpp   - stdio.h, char* c & printf
+02-c_strings.cpp   - cstdio
+03-c++_strings.cpp - +iostream,string s & printf("s", s);
+04-c++_strings.cpp - cout << c << s;
+05-c++_strings.cpp - +const to c and s
+06-c++_strings.cpp - delete the char*, NOW it's all OOP C++!
+
+10-formatted_output.cpp            - s="The answer is" << 42
+11-formatted_output-hex.cpp        - +std::hex
+12-formatted_output-showbase.cpp   - +std::showbase
+13-formatted_output-bitset.cpp     - -hex + bitset<8>{42}
+14-formatted_output-separators.cpp - -bitset<8>{42} +32'768
+15-3_inits.cpp                     - s1-s3 with =, (), and {} init
+16-using.cpp                       - +using namespace std;
+
+20-scanf.cpp           - char s[10]; cout name?; scanf("%9s", s); overflow
+21-cin_string.cpp      - string s; " ; cin >> s; George F. Rice
+22-cin_int.cpp         - +int a; age? ; +cin >> a; George F. Rice 21
+23-cin_ignore.cpp      - +cin.clear(); cin.ignore(32767, '\n'); "
+24-cin_getline.cpp     - -cin +getline "
+25-cerr.cpp            - a<0 cerr<< else
+26-cerr_problem.cpp    - 10..0 to cout, ERROR: Timeout to cout; bash >
+27-cerr_solution.cpp   - -cout +cerr; +return -1; bash >
+28-return_non-zero.cpp - bash: if [ $? = 0 ] ; then echo true; fi
+
+30-refs_and_pointers.cpp - int i=42; int& ir=i; ir=7; with couts
+                         - int ip*=&i; cout ip and *ip; *ip=256; cout again
+31_pointer_access.cpp    - string s="..."; cout s.size() ("function built in")
+                           sr identical cout; cout sp->size()
+32_new.cpp               - string* sp = new string{"Beep beep"};
+                           cout sp, *sp, sp->size; delete sp
+33_const.cpp             - #define vs const int vs constexpr int MAX_SIZE
+                           int array[MAX_SIZE], fill with i*i, then cout
+
+40_vectors.cpp              - replace MAX_SIZE & array with vector<int>
+41_foreach.cpp              - -for +foreach : -int +auto
+42_reverse.cpp              - -vector +list -push_back +push_front (reverses)
+43_no_references.cpp        - void increment(int i) fn for inputs
+44_reference_parameters.cpp - -int +int&
+45_pointer_parameters.cpp   - -int& +int*
+46_overloading.cpp          - +void increment(int& i, int j)
+47_default_parameters.cpp   - collapse to void increment(int& i, int j=1)
+48_ternary.cpp              - 
+
+slides 63-68, 76-79
+
