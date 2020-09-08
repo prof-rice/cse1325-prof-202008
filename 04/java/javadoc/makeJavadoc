@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+mkdir -p doc
+javadoc -d ./doc ./Complex.java
+
