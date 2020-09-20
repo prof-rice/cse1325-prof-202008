@@ -1,0 +1,66 @@
+==================================
+   R I D D L E   M E   T H I S
+==================================
+
+
+
+1) Ask a riddle
+2) Answer a riddle
+3) Add another answer to a riddle
+4) Copy a riddle
+0) Exit
+
+Riddle me this: 1
+New riddle: Why did the chicken cross the road?
+
+
+0) Why did the chicken cross the road?
+    
+Riddle me this: 2
+The riddle number: To get to the other side!
+That's not an integer!
+The riddle number: 0
+Solution: To get to the other side!
+
+
+0) Why did the chicken cross the road?
+    To get to the other side!
+
+
+Riddle me this: 3
+The riddle number: 0
+Solution: He saw Chuck Norris coming!
+
+
+0) Why did the chicken cross the road?
+    To get to the other side!
+1) Why did the chicken cross the road?
+    He saw Chuck Norris coming!
+
+
+Riddle me this: 4
+From riddle number: 1
+To riddle number: 0
+
+
+0) Why did the chicken cross the road?
+    He saw Chuck Norris coming!
+1) Why did the chicken cross the road?
+    He saw Chuck Norris coming!
+
+
+Riddle me this: 2
+The riddle number: 1
+Solution: To create poultry in motion!
+
+
+0) Why did the chicken cross the road?
+    He saw Chuck Norris coming!
+1) Why did the chicken cross the road?
+    To create poultry in motion!
+
+
+Riddle me this: 
+
+
+
