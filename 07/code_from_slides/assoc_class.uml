@@ -1,0 +1,27 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+' Classes
+
+class Book {
+ - pages : vector<Paper>  
+ + Book(size : int)
+}
+
+class Patron {
+ - libraries : vector<Library*>  
+ + add_library(library : Library&)
+}
+
+class Checkout {
+  - patron : Patron&
+  - book   : Book&
+  + Checkout(book : Book&, patron : Patron&) 
+}
+
+' Relationships
+
+(Patron, Book) .. Checkout
+
+@enduml

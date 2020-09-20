@@ -1,0 +1,3 @@
+The UML diagram specified in class.uml and shown in class.png may be found on-line at the following URL. You may edit the [PlantUML code] online and click Submit to edit the diagram.
+
+[PlantUML code]: http://www.plantuml.com/plantuml/uml/PLBDRi8m6BldAQnEGkKdrNQjjegDqwGTaFO0KsWZY5gIAWdJDiQxhrz2e6YNG9pF_cp3qdbX_M7VCTSgtGihzgWxuTopzrPj3bw-raQ_gn-9UxPJZKIjRDr9ni8KtjJ62lkD8mF7nfZMeSIdhBsnZo_3TLO137E8flcWvvmEbA2toPITaWxTeqWljd8aiXQzj54a3EMEl9HGsWVwAj3NqZgZIU0EMknfm0t-zVQwOIsyfH7QqGNNQhpd76JijujGVlv4cTAEZQzsicxDmPCmkOzRIiHram26p4Yf6J2_q6xwMFoZJr4Iknl5e3v22Y-__3Kdvk4blq7nX2mBPdjHjqEn0zuG6L4iPiUHCkEKu4G-4aZaQ0RPGr7CCd1U8NvDVP19sHczTQZICF-j47yLbgOC3p4P7PZn68NbaR00mLCKnQMRC3W0LV9vKHfZiH3EJMg2iQNK3Vsb_m00

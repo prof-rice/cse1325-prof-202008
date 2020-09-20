@@ -1,0 +1,50 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class Library {
+ - books : vector<Book*>  
+ + add_book(book : Book&)
+}
+
+class Book {
+ - pages : vector<Paper>  
+ + Book(size : int)
+}
+
+Class Person {
+ # name : string
+}
+
+class Patron {
+ - libraries : vector<Library*>  
+ + add_library(library : Library&)
+}
+
+class Checkout {
+  - patron : Patron&
+  - book   : Book&
+  + Checkout(book : Book&, patron : Patron&)
+}
+
+class Paper {
+ -text : string
+ +Paper(text : string = "")
+}
+
+package std {
+  class vector {  
+  }
+  class string {
+  }
+}
+
+Patron "1..*" --> "1..*" Library : belongs >
+Patron -|> Person
+Library o- Book
+Book *- Paper
+(Patron, Book) .. Checkout
+Book ..> vector 
+Library ..> vector 
+Paper o-- string
+@enduml

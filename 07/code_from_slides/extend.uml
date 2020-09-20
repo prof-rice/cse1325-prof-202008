@@ -1,0 +1,11 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+skinparam nodesep 150
+skinparam ranksep 20
+
+class Member << Interface >>
+
+Student -> Member
+
+@enduml

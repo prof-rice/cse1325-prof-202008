@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+skinparam nodesep 150
+skinparam ranksep 20
+
+' "Hours of Operation" <- Cafe
+
+' Patron - Server : interact
+
+Cafe "1  +hosts" - "+visits  *" Patron
+
+@enduml
