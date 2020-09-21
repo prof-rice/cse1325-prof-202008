@@ -1,6 +1,6 @@
 CXXFLAGS += --std=c++17
 
-all:  00_main 01_main 03_main 10_main 11_main
+all:  00_main 01_main 03_main 04_main 10_main 11_main
 	@printf "\n02_main.cpp includes an intention error, and has been skipped\nType 'make 02_main' to see the error\n\n"
 
 log: CXXFLAGS += -DLOGGER
@@ -17,6 +17,9 @@ log: all
 
 03_main: 03_main.cpp
 	-$(CXX) $(CXXFLAGS) 03_*.cpp -o 03_main
+
+04_main: 04_main.cpp
+	-$(CXX) $(CXXFLAGS) 04_*.cpp -o 04_main
 
 10_main: 10_main.cpp
 	-$(CXX) $(CXXFLAGS) 10_*.cpp -o 10_main

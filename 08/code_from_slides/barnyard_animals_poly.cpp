@@ -16,19 +16,19 @@ class Critter {
 class Cow : public Critter {
   public:
     Cow(int frequency) : Critter(frequency) { }
-    void speak() { if (!_timer) std::cout << "Moo! Mooooo!" << std::endl; }
+    void speak() override { if (!_timer) std::cout << "Moo! Mooooo!" << std::endl; }
 };
 
 class Dog : public Critter {
   public:
     Dog(int frequency) : Critter(frequency) { }
-    void speak() { if (!_timer) std::cout << "Woof! Woof!" << std::endl; }
+    void speak() override { if (!_timer) std::cout << "Woof! Woof!" << std::endl; }
 };
 
 class Chicken : public Critter {
   public:
     Chicken(int frequency) : Critter(frequency) { }
-    void speak() { if (!_timer) std::cout << "Cluck! Cluck!" << std::endl; }
+    void speak() override { if (!_timer) std::cout << "Cluck! Cluck!" << std::endl; }
 };
 
 int main() {
