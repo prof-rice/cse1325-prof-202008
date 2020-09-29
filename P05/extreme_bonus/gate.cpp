@@ -1,9 +1,11 @@
 #include "gate.h"
 #include <stdexcept>
+#include <cassert>
 
 Gate::Gate() : input1{0}, input2{0} { }
 
 void Gate::connect(Gate& gate, Pin input_pin) {
+    assert(to_gate.size() == to_pin.size());
     to_gate.push_back(&gate);
     to_pin.push_back(input_pin);
 }

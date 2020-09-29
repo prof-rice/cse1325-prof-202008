@@ -2,7 +2,7 @@ CXXFLAGS = --std=c++17
 
 all: gate test
 
-gate: main.o gate.o and.o or.o *.h
+gate: main.o gate.o and.o or.o xor.o *.h
 	$(CXX) $(CXXFLAGS) main.o gate.o and.o or.o xor.o -o gate
 
 main.o: main.cpp *.h
