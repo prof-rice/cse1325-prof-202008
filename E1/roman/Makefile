@@ -9,7 +9,7 @@ main.o: main.cpp *.h
 roman.o: roman.cpp *.h
 	$(CXX) $(CXXFLAGS) -c roman.cpp -o roman.o
 
-DEBUG: CXXFLAGS += g
+DEBUG: CXXFLAGS += -g
 DEBUG: roman
 
 clean:
