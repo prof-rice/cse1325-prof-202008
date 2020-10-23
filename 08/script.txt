@@ -1,0 +1,7 @@
+00_*  Person class with name attribute and to_string() method
+01_*  Add Student class inheriting from Person, add gpa attribute, update to_string
+02_*  Attempt the override keyword
+03_*  Add the virtual keyword
+
+10_*  Add operator<< to both
+11_*  Add logging
