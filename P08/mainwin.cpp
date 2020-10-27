@@ -103,6 +103,7 @@ Mainwin::Mainwin() : store{nullptr}, display{new Gtk::Label{}}, filename{"untitl
     vbox->show_all();
 
     // Start a new store
+    on_new_store_click(true);
 }
 
 Mainwin::~Mainwin() { }
