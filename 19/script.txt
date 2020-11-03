@@ -1,0 +1,26 @@
+#### Slides 1-21 - Memory leaks and casting
+
+00_no_poly.cpp: Base + Derived with print(), call 3 ways including "polymorphic"
+
+01_no_override.cpp: Add override
+
+02_virtual.cpp: Add virtual
+
+03_ref_ptr.cpp: Make base &, then * - WORKS!
+
+#### Slide 34 - Define polymorphism
+
+10_parameters.cpp: Add print_copy, _ref, _ptr; call each with a Base and a Derived
+
+#### Slide 40-42 - what's happening with memory
+
+11_returns.cpp: Instance Derived with method _copy, _ref, _ptr and assign to base
+
+20_operator.cpp: Dump the methods, add operator<< to Base and Derived that print name
+    Instance and print a Base, Derived, and a Derived as a Base reference - last one FAILS!
+    Functions are NEVER polymorphic!
+
+21_operator_fixed.cpp: Replace literal in Base's operator<< with polymorphic call to print()
+    DELETE Derived's operator<<.  NO changes to main(). WORKS!
+
+#### Slide 43-46 - dynamic_cast
