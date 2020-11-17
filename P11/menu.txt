@@ -1,0 +1,36 @@
+File
+  New
+  Open
+  Save
+  Save As
+  Exit
+Edit
+  Cut
+  Copy
+  Paste
+  Delete
+  --
+  Find
+  --
+  Customer
+  Product
+  Order
+  --
+  Pay for Order
+  Complete Order
+  Cancel Order
+View
+  Customers
+  Products
+  Orders
+Insert
+  New Customer
+  New Product
+  New Order
+Tools
+  Sort
+  Preferences
+
+Help
+  Manual
+  About 
