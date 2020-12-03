@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class Main {
++ main() : int
++ average(begin : iterator, end : iterator) : double
+}
+
+class Grades {
+- _student : string
+- _grades : vector<double>
++ Grades(student : string)
++ student() : string
++ add_grade(grade : double) 
+}
+
+Main *-right- Grades
+
+@enduml
+

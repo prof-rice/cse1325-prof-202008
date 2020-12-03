@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class Main {
++ main() : int
+}
+
+class EntryDialog extends MessageDialog {
+-entry : Entry
++EntryDialog(parent : Window&, message : string&)
++set_text(text : string)
++get_text() : string
++get_data() : double
+}
+
+Main *-right- EntryDialog
+
+@enduml
+
+

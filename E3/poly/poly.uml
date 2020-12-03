@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class Main {
++ main() : int
+}
+
+class Polynomial {
++ {abstract} solve() : Solution
++ {abstract} to_string() : string
+}
+note right of Polynomial : Solution is a vector of doubles. \n All classes include operator<< \n (Do NOT write these!).
+
+class Linear extends Polynomial {
+- _a : double
+- _b : double
++ Linear(a : double, b : double)
++ solve() : Solution <<override>>
++ to_string() : string <<override>>
+}
+
+class Quadratic extends Polynomial {
+- _a : double
+- _b : double
+- _c : double
++ Quadratic(a : double, b : double, c: double)
++ solve() : Solution <<override>>
++ to_string() : string <<override>>
+}
+
+
+Main *-right- Polynomial
+
+@enduml
+
