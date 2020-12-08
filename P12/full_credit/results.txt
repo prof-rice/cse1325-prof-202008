@@ -1,0 +1,230 @@
+QUESTION 1: Which values of width, height, and icount did you select for your machine to generate a Mandelbrot image with 1 thread with around a 30 second runtime: 
+
+2000 2000 500
+
+QUESTION 2: Provide the output of ``time ./mandelbrot width height icount nthreads`` for runs with 1 through 16 threads below. You can run all of these with a single bash command if you like, e.g., (using your values in place of 2000 2000 500) ``for i in {1..16} ; do time ./mandelbrot 2000 2000 500 $i ; done``
+
+Example Timing:
+
+  width: 2000  height: 2000  icount: 500  threads: 1
+  wrote: image.ppm
+
+real	0m28.751s
+user	0m28.715s
+sys	0m0.020s
+
+
+YOUR Timing:
+
+ricegf@antares:~/dev/cse1325-prof/P12/full_credit@ m
+                 \\\///
+                / _  _ \
+              (| (.)(.) |)
+.-----------.OOOo--()--oOOO.-----------.
+|                                      |
+|                                      |
+|            Starting a Build          |
+|    Mon Dec 7 10:56:00 PM CST 2020    |
+|                                      |
+|                                      |
+'-----------.oooO----------------------'
+             (   )   Oooo.
+              \ (    (   )
+               \_)    ) /
+                     (_/
+g++ --std=c++17 -pthread -c main.cpp -o main.o
+g++ --std=c++17 -pthread -c mandelbrot.cpp -o mandelbrot.o
+g++ --std=c++17 -pthread main.o mandelbrot.o -o mandelbrot
+ricegf@antares:~/dev/cse1325-prof/P12/full_credit$ for i in {1..16} 32 64 128 256 512 1024 ; do time ./mandelbrot 2000 2000 500 $i ; done
+
+
+  width: 2000  height: 2000  icount: 500  threads: 1
+  wrote: image.ppm
+
+real	0m29.072s
+user	0m29.021s
+sys	0m0.040s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 2
+  wrote: image.ppm
+
+real	0m15.349s
+user	0m29.991s
+sys	0m0.032s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 3
+  wrote: image.ppm
+
+real	0m17.862s
+user	0m30.125s
+sys	0m0.028s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 4
+  wrote: image.ppm
+
+real	0m12.261s
+user	0m29.935s
+sys	0m0.044s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 5
+  wrote: image.ppm
+
+real	0m11.833s
+user	0m30.464s
+sys	0m0.036s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 6
+  wrote: image.ppm
+
+real	0m9.396s
+user	0m30.564s
+sys	0m0.064s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 7
+  wrote: image.ppm
+
+real	0m8.909s
+user	0m31.575s
+sys	0m0.028s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 8
+  wrote: image.ppm
+
+real	0m7.551s
+user	0m32.384s
+sys	0m0.040s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 9
+  wrote: image.ppm
+
+real	0m7.332s
+user	0m33.941s
+sys	0m0.044s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 10
+  wrote: image.ppm
+
+real	0m6.567s
+user	0m34.400s
+sys	0m0.024s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 11
+  wrote: image.ppm
+
+real	0m6.962s
+user	0m35.407s
+sys	0m0.036s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 12
+  wrote: image.ppm
+
+real	0m5.703s
+user	0m35.535s
+sys	0m0.040s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 13
+  wrote: image.ppm
+
+real	0m5.721s
+user	0m36.995s
+sys	0m0.048s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 14
+  wrote: image.ppm
+
+real	0m5.710s
+user	0m37.410s
+sys	0m0.071s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 15
+  wrote: image.ppm
+
+real	0m5.345s
+user	0m38.104s
+sys	0m0.040s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 16
+  wrote: image.ppm
+
+real	0m5.666s
+user	0m38.447s
+sys	0m0.064s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 32
+  wrote: image.ppm
+
+real	0m4.542s
+user	0m41.826s
+sys	0m0.092s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 64
+  wrote: image.ppm
+
+real	0m4.353s
+user	0m42.644s
+sys	0m0.064s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 128
+  wrote: image.ppm
+
+real	0m4.308s
+user	0m42.756s
+sys	0m0.052s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 256
+  wrote: image.ppm
+
+real	0m4.426s
+user	0m42.705s
+sys	0m0.107s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 512
+  wrote: image.ppm
+
+real	0m4.185s
+user	0m42.771s
+sys	0m0.100s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 1024
+  wrote: image.ppm
+
+real	0m4.210s
+user	0m42.849s
+sys	0m0.064s
+ricegf@antares:~/dev/cse1325-prof/P12/full_credit$ 
+
+
+
+QUESTION 3: Does adding more threads continue to speed up the program? Do more threads ever slow down the program slightly?  Why or why not?
+
+Adding threads beyond the number of (hyperthreaded) cores offers minimal performance improvement. Performance improvements come from physical parallel execution moreso than threading per se.
+
+
+QUESTION 4: Does adding more threads increase the "system load", or is it constant regardless of the number of threads?  Why?
+
+System load (the "sys" lines above) increase modestly with number of threads, but is still less than a tenth of a second with 1024 threads.
+
+
+
+

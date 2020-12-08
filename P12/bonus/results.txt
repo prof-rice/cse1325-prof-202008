@@ -1,0 +1,258 @@
+QUESTION 1: Which values of width, height, and icount did you select for your machine to generate a Mandelbrot image with 1 thread with around a 30 second runtime: 
+
+2000 2000 500
+
+QUESTION 2: Provide the output of ``time ./mandelbrot width height icount nthreads`` for runs with 1 through 16 threads below. You can run all of these with a single bash command if you like, e.g., (using your values in place of 2000 2000 500) ``for i in {1..16} ; do time ./mandelbrot 2000 2000 500 $i ; done``
+
+Example Timing:
+
+  width: 2000  height: 2000  icount: 500  threads: 1
+  wrote: image.ppm
+
+real	0m28.751s
+user	0m28.715s
+sys	0m0.020s
+
+
+YOUR Timing:
+
+The thread pool approach in the bonus is noticably more efficient between 3 and 16 threads (on a 12 core machine).
+
+Threads    Full Credit	     Bonus
+   1         0m29.072s   0m29.735s
+   2         0m15.349s   0m15.436s
+   3         0m17.862s   0m10.564s
+   4         0m12.261s    0m8.520s
+   5         0m11.833s    0m6.794s
+   6          0m9.396s    0m6.042s
+   7          0m8.909s    0m5.377s
+   8          0m7.551s    0m5.167s
+   9          0m7.332s    0m4.910s
+  10          0m6.567s    0m4.570s
+  11          0m6.962s    0m4.383s
+  12          0m5.703s    0m4.286s
+  13          0m5.721s    0m4.256s
+  14          0m5.710s    0m4.263s
+  15          0m5.345s    0m4.482s
+  16          0m5.666s    0m4.188s
+  32          0m4.542s    0m4.232s
+  65          0m4.353s    0m4.211s
+ 128          0m4.308s    0m4.227s
+ 256          0m4.426s    0m4.213s
+ 512          0m4.185s    0m4.215s
+1024          0m4.210s    0m4.444s
+
+
+
+ricegf@antares:~/dev/cse1325-prof/P12/bonus$ m
+                 \\\///
+                / _  _ \
+              (| (.)(.) |)
+.-----------.OOOo--()--oOOO.-----------.
+|                                      |
+|                                      |
+|            Starting a Build          |
+|    Mon Dec 7 11:02:29 PM CST 2020    |
+|                                      |
+|                                      |
+'-----------.oooO----------------------'
+             (   )   Oooo.
+              \ (    (   )
+               \_)    ) /
+                     (_/
+g++ --std=c++17 -pthread -c main.cpp -o main.o
+g++ --std=c++17 -pthread -c mandelbrot.cpp -o mandelbrot.o
+g++ --std=c++17 -pthread main.o mandelbrot.o -o mandelbrot
+ricegf@antares:~/dev/cse1325-prof/P12/bonus$ for i in {1..16} 32 64 128 256 512 1024 ; do time ./mandelbrot 2000 2000 500 $i ; done
+
+
+  width: 2000  height: 2000  icount: 500  threads: 1
+  wrote: image.ppm
+
+real	0m29.735s
+user	0m29.695s
+sys	0m0.016s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 2
+  wrote: image.ppm
+
+real	0m15.436s
+user	0m30.171s
+sys	0m0.036s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 3
+  wrote: image.ppm
+
+real	0m10.564s
+user	0m30.334s
+sys	0m0.056s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 4
+  wrote: image.ppm
+
+real	0m8.520s
+user	0m32.132s
+sys	0m0.024s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 5
+  wrote: image.ppm
+
+real	0m6.794s
+user	0m31.551s
+sys	0m0.036s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 6
+  wrote: image.ppm
+
+real	0m6.042s
+user	0m33.072s
+sys	0m0.044s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 7
+  wrote: image.ppm
+
+real	0m5.377s
+user	0m33.732s
+sys	0m0.048s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 8
+  wrote: image.ppm
+
+real	0m5.167s
+user	0m36.467s
+sys	0m0.060s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 9
+  wrote: image.ppm
+
+real	0m4.910s
+user	0m38.925s
+sys	0m0.040s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 10
+  wrote: image.ppm
+
+real	0m4.570s
+user	0m40.326s
+sys	0m0.032s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 11
+  wrote: image.ppm
+
+real	0m4.383s
+user	0m41.693s
+sys	0m0.048s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 12
+  wrote: image.ppm
+
+real	0m4.286s
+user	0m42.969s
+sys	0m0.076s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 13
+  wrote: image.ppm
+
+real	0m4.256s
+user	0m42.894s
+sys	0m0.056s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 14
+  wrote: image.ppm
+
+real	0m4.263s
+user	0m42.840s
+sys	0m0.068s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 15
+  wrote: image.ppm
+
+real	0m4.482s
+user	0m42.907s
+sys	0m0.044s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 16
+  wrote: image.ppm
+
+real	0m4.188s
+user	0m42.883s
+sys	0m0.040s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 32
+  wrote: image.ppm
+
+real	0m4.232s
+user	0m42.898s
+sys	0m0.040s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 64
+  wrote: image.ppm
+
+real	0m4.211s
+user	0m42.900s
+sys	0m0.084s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 128
+  wrote: image.ppm
+
+real	0m4.227s
+user	0m42.933s
+sys	0m0.052s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 256
+  wrote: image.ppm
+
+real	0m4.213s
+user	0m42.978s
+sys	0m0.068s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 512
+  wrote: image.ppm
+
+real	0m4.215s
+user	0m42.877s
+sys	0m0.080s
+
+
+  width: 2000  height: 2000  icount: 500  threads: 1024
+  wrote: image.ppm
+
+real	0m4.444s
+user	0m42.926s
+sys	0m0.167s
+ricegf@antares:~/dev/cse1325-prof/P12/bonus$ 
+
+
+
+QUESTION 3: Does adding more threads continue to speed up the program? Do more threads ever slow down the program slightly?  Why or why not?
+
+Adding threads beyond the number of (hyperthreaded) cores offers minimal performance improvement. Performance improvements come from physical parallel execution moreso than threading per se.
+
+
+QUESTION 4: Does adding more threads increase the "system load", or is it constant regardless of the number of threads?  Why?
+
+System load (the "sys" lines above) increase modestly with number of threads, but is still less than a tenth of a second with 1024 threads.
+
+
+
+
